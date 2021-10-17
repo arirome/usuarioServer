@@ -14,7 +14,6 @@ const {
 //leer informacion del usuario y realizar las validaciones de los campos y del token
 router.get('/get-user',
 
-validar_jwt,
 roluser('admin', 'collaborator', 'communt'),
 body('username', 'El username ingresado no contiene un formato correcto')
 .isString()
